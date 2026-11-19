@@ -1,0 +1,35 @@
+﻿project-root/
+├── server/
+│   ├── src/
+│   │   ├── app.js              # express app setup
+│   │   ├── server.js           # entry point, graceful shutdown
+│   │   ├── config/
+│   │   │   └── index.js        # env-based config (dotenv)
+│   │   ├── routes/
+│   │   │   └── sensor.routes.js
+│   │   ├── controllers/
+│   │   │   └── sensor.controller.js
+│   │   ├── services/
+│   │   │   └── sensorStore.service.js   # latest data, staleness logic, fallback
+│   │   ├── validators/
+│   │   │   └── sensor.schema.js       # JSON schema validation (ajv)
+│   │   ├── middleware/
+│   │   │   ├── errorHandler.js
+│   │   │   ├── notFound.js
+│   │   │   ├── rateLimiter.js
+│   │   │   └── apiKeyAuth.js
+│   │   └── utils/
+│   │       └── logger.js
+│   ├── tests/
+│   │   └── sensor.test.js       # basic tests (jest + supertest)
+│   ├── .env.example
+│   ├── jest.config.js
+│   ├── package.json
+│   └── .eslintrc.json (implicit in package.json)
+├── esp32/
+│   ├── esp32_sensor_node/
+│   │   ├── esp32_sensor_node.ino
+│   │   ├── config.h            # WiFi, server URL, API key, pins, intervals
+│   │   └── README.md           # flashing and wiring guide
+└── docs/
+    └── README.md               # full documentation

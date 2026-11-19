@@ -1,0 +1,94 @@
+# ===== Dependencies =====
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/install-state.gz
+
+# ===== Environment variables / secrets =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ===== Build output =====
+/build
+/dist
+/client/build
+/client/dist
+/server/dist
+/out
+.next/
+.vite/
+.cache/
+.parcel-cache/
+
+# ===== Logs =====
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===== Testing / coverage =====
+coverage/
+.nyc_output/
+*.lcov
+
+# ===== Runtime / process files =====
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ===== Uploads / local data =====
+uploads/
+/server/uploads
+/server/public/uploads
+*.sqlite
+data/db/
+dump/
+*.rdb
+
+# ===== Package manager misc =====
+.npm
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+.node_repl_history
+*.tgz
+
+# ===== TypeScript =====
+*.d.ts.map
+
+# ===== Editor / IDE =====
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ===== OS files =====
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ===== Deployment =====
+.vercel
+.netlify
+.firebase/
+*.local
